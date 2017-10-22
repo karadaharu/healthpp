@@ -1,7 +1,10 @@
-console.log('main');
-$(".button-collapse").sideNav();
-$('#textarea1').trigger('autoresize');
-$('.result').hide();
-$('.submit').click(function () {
-  $('.result').show();
+$(document).ready(function(){
+  $(".button-collapse").sideNav({
+    menuWidth: 200
+  });
+  $('#textarea1').trigger('autoresize');
+  $('.submit').click(function () {
+    $('.result').toggle();
+  });
 });
+
