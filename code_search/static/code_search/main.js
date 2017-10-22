@@ -25,10 +25,10 @@ $(document).ready(function(){
     } 
     $('.on-edit').toggle();
     $('.off-edit').toggle();
-    // let div = $('<div></div>').addClass('styled-textarea materialize-textarea');
-    // $('.edit-col').append(div);
     $('.result').toggle();
   });
+
+  // Code Selection
   $('.checkbox').click(function() {
     let code = $(this).data('code');
     let selected_codes = $('#selected_codes').prop('value');
@@ -39,6 +39,16 @@ $(document).ready(function(){
       let reg_exp = new RegExp(code + ', ', "g");
       let selected_codes_updates = selected_codes.replace(reg_exp, '');
       $('#selected_codes').attr('value',selected_codes_updates);
+    }
+  });
+
+  // Toggle Favorite 
+  $('.icon-favorite').click(function () {
+    let icon = $(this).children().first()
+    if ( icon.text() === 'star') {
+      icon.text('star_border');
+    } else {
+      icon.text('star');
     }
   });
 });
