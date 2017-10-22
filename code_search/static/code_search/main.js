@@ -47,6 +47,18 @@ $(document).ready(function(){
     }
   });
 
+  let colors = ['#b4dcea', '#c8e6c9'];
+  $('.procedure-1').css('background-color', colors[0]);
+  $('.tab-a').click(function() {
+    let target = parseInt($(this).data('target'));
+    $('.procedure-'+target).css('background-color', colors[target-1]);
+    if (target == 1) {
+      $('.procedure-2').css('background-color', 'transparent');
+    } else {
+      $('.procedure-1').css('background-color', 'transparent');
+    }
+  });
+
   // Toggle Favorite 
   $('.icon-favorite').click(function () {
     let icon = $(this).children().first()
