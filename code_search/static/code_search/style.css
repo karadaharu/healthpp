@@ -4,3 +4,19 @@
 .container {
   width: 90%;
 }
+.off-edit {
+  margin-bottom: 40px;
+}
+.label-off {
+  margin-top: -25px;
+  font-size: 0.8rem;
+}
+.tab1 {
+  color:#ffe4c2;
+}
+.tab2 {
+  color:#b4dcea;
+}
+.tab3 {
+  color:#fccae6;
+}
