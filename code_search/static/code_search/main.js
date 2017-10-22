@@ -51,5 +51,32 @@ $(document).ready(function(){
       icon.text('star');
     }
   });
+
+  // Initialize description
+  let descriptions = $('.description');
+  for (var i = 0; i < descriptions.length; ++i) {
+    let full_text = $(descriptions[i]).data('full');
+    let max_len = 20;
+    if (full_text.length > max_len) {
+      $(descriptions[i]).text(full_text.slice(0, max_len) + '...');
+      $(descriptions[i]).data('isfull', 'false');
+
+      $(descriptions[i]).click(function() {
+        console.log('aaa');
+        full_text = $(this).data('full');
+        if ( $(this).data('isfull') === 'false') {
+          $(this).text(full_text);
+          $(this).data('isfull', 'true');
+        } else {
+          $(this).text(full_text.slice(0, max_len) + '...');
+          $(this).data('isfull', 'false');
+        }
+      });
+
+    } else {
+      $(descriptions[i]).text(full_text);
+    }
+  }
+  
 });
 

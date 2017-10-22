@@ -25,4 +25,8 @@
 }
 .top-prob{
   font-size: 0.9rem;
+ text-decoration: underline;
+}
+.description {
+  width:270px;
 }
