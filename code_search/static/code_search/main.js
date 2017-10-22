@@ -9,7 +9,7 @@ $(document).ready(function(){
     if ($('.on-edit').is(":visible")) {
       $('.off-edit').empty();
       // let label = $('<p></p>').text('Treatment');
-      let label = $('<label></label>').text('Treatment').attr('for','textarea1');//.addClass('label-off');
+      let label = $('<label></label>').text('Description').attr('for','textarea1');//.addClass('label-off');
       label.css('margin-top','-25px');
       label.css('font-size','0.8rem');
       $('.off-edit').append(label);
@@ -56,7 +56,7 @@ $(document).ready(function(){
   let descriptions = $('.description');
   for (var i = 0; i < descriptions.length; ++i) {
     let full_text = $(descriptions[i]).data('full');
-    let max_len = 20;
+    let max_len = 32;
     if (full_text.length > max_len) {
       $(descriptions[i]).text(full_text.slice(0, max_len) + '...');
       $(descriptions[i]).data('isfull', 'false');

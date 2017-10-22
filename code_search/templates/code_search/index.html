@@ -34,6 +34,9 @@
   <div class="row">
     <form class="col s6">
       <div class="row">
+        <h4>Treatments</h4>
+      </div>
+      <div class="row">
         <div class="input-field col s12 on-edit">
           <textarea id="textarea1" class="materialize-textarea">
 The heart is an amazing organ. It pumps oxygen and nutrient-rich blood throughout the body to sustain life.
@@ -42,15 +45,17 @@ This fist-sized powerhouse beats (expands and contracts) 100,000 times per day, 
 
 As the heart beats, it pumps blood through a system of blood vessels, called the circulatory system. 
           </textarea>
-          <label for="textarea1">Treatment</label>
+          <label for="textarea1">Description</label>
         </div>
-        <div class="input-field col s12 off-edit">
+        <div class="input2field col s12 off-edit">
         </div>
       </div>
       <div class="row">
+        <div class="col s12">
         <button class="btn waves-effect waves-light submit">Search
           <i class="material-icons right">send</i>
         </button>
+        </div>
       </div>
     </form>
 
@@ -66,7 +71,7 @@ As the heart beats, it pumps blood through a system of blood vessels, called the
       </div>
     <div class="row">
       <div class="col s12">
-        <ul class="tabs">
+        <ul class="tabs grey lighten-5">
           <li class="tab col s4"><a class="active blue-text" href="#treatment1">Procedure 1</a></li>
           <li class="tab col s4"><a class="pink-text" href="#treatment2">Procedure 2</a></li>
           <li class="tab col s4"><a class="orange-text" href="#treatment3">Procedure 3</a></li>
@@ -116,7 +121,6 @@ As the heart beats, it pumps blood through a system of blood vessels, called the
               <th>CPT Code</th>
               <th>Description</th>
               <th></th>
-              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -125,26 +129,20 @@ As the heart beats, it pumps blood through a system of blood vessels, called the
                 <input type="checkbox" data-code="70336" id="check1" class="checkbox" />
                 <label for="check1"></label>
               </td>
-              <td>70336</td>
-              <td>MRI TMJ Joint</td>
-              <td>
-                <i class="material-icons">details</i>
-              </td>
-              <td>
+              <td>70336<br><span class="top-prob">Top match!</span></td>
+              <td class="description" data-full="MRI TMJ Joint" data-isfull="true"></td>
+              <td class="icon-favorite">
                 <i class="material-icons">star_border</i>
               </td>
             </tr>
             <tr>
               <td>
-                <input type="checkbox" data-code="70540" id="check2" class="checkbox" />
+                <input type="checkbox" data-code="35092" id="check2" class="checkbox" />
                 <label for="check2"></label>
               </td>
               <td>70540</td>
-              <td>MRI ORbit/Face/Neck w/o contrast</td>
-              <td>
-                <i class="material-icons">details</i>
-              </td>
-              <td>
+              <td class="description" data-full="Direct repair of aneurysm, false aneurysm, or excision (partial or total) and graft insertion, with or without patch graft; for ruptured aneurysm, abdominal aorta involving visceral vessels (mesenteric, celiac, renal)." data-isfull="true"></td>
+              <td class="icon-favorite">
                 <i class="material-icons">star_border</i>
               </td>
             </tr>
@@ -159,7 +157,6 @@ As the heart beats, it pumps blood through a system of blood vessels, called the
               <th>CPT Code</th>
               <th>Description</th>
               <th></th>
-              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -168,32 +165,25 @@ As the heart beats, it pumps blood through a system of blood vessels, called the
                 <input type="checkbox" data-code="70336" id="check1" class="checkbox" />
                 <label for="check1"></label>
               </td>
-              <td>70336</td>
-              <td>MRI TMJ Joint</td>
-              <td>
-                <i class="material-icons">details</i>
-              </td>
-              <td>
+              <td>70336<br><span class="top-prob">Top match!</span></td>
+              <td class="description" data-full="MRI TMJ Joint" data-isfull="true"></td>
+              <td class="icon-favorite">
                 <i class="material-icons">star_border</i>
               </td>
             </tr>
             <tr>
               <td>
-                <input type="checkbox" data-code="70540" id="check2" class="checkbox" />
+                <input type="checkbox" data-code="35092" id="check2" class="checkbox" />
                 <label for="check2"></label>
               </td>
               <td>70540</td>
-              <td>MRI ORbit/Face/Neck w/o contrast</td>
-              <td>
-                <i class="material-icons">details</i>
-              </td>
-              <td>
+              <td class="description" data-full="Direct repair of aneurysm, false aneurysm, or excision (partial or total) and graft insertion, with or without patch graft; for ruptured aneurysm, abdominal aorta involving visceral vessels (mesenteric, celiac, renal)." data-isfull="true"></td>
+              <td class="icon-favorite">
                 <i class="material-icons">star_border</i>
               </td>
             </tr>
           </tbody>
         </table>
-
       </div>
     </div>
     </div>
