@@ -14,7 +14,7 @@ $(document).ready(function(){
       // $('.off-edit').append(label);
       let content = $('#textarea1').text();
       let sentenses = content.split("\n\n");
-      let colors = ['#b4dcea', '#fccae6', '#ffe4c2'];
+      let colors = ['#b4dcea', '#c8e6c9', '#ffe4c2'];
       for (let i in sentenses) {
         let sentense = sentenses[i];
         let p = $('<p></p>').append(sentense);
