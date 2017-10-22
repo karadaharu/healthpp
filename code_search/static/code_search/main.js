@@ -9,7 +9,7 @@ $(document).ready(function(){
     if ($('.on-edit').is(":visible")) {
       $('.off-edit').empty();
       // let label = $('<p></p>').text('Treatment');
-      let label = $('<label></label>').text('Description').attr('for','textarea1');//.addClass('label-off');
+      let label = $('<label></label>').text('Describe treatments here').attr('for','textarea1');//.addClass('label-off');
       label.css('margin-top','-25px');
       label.css('font-size','0.8rem');
       $('.off-edit').append(label);
@@ -23,6 +23,12 @@ $(document).ready(function(){
         $('.off-edit').append(p);
       }
     } 
+    $('.on-edit').toggle();
+    $('.off-edit').toggle();
+    $('.result').toggle();
+  });
+
+  $('.off-edit').click(function() {
     $('.on-edit').toggle();
     $('.off-edit').toggle();
     $('.result').toggle();
