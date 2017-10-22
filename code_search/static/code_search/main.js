@@ -7,20 +7,20 @@ $(document).ready(function(){
   $('#textarea1').trigger('autoresize');
   $('.submit').click(function () {
     if ($('.on-edit').is(":visible")) {
-      $('.off-edit').empty();
+      // $('.off-edit').empty();
       // let label = $('<label></label>').text('Describe treatments here').attr('for','textarea1');
       // label.css('margin-top','-25px');
       // label.css('font-size','0.8rem');
       // $('.off-edit').append(label);
-      let content = $('#textarea1').text();
-      let sentenses = content.split("\n\n");
-      let colors = ['#b4dcea', '#c8e6c9', '#ffe4c2'];
-      for (let i in sentenses) {
-        let sentense = sentenses[i];
-        let p = $('<p></p>').append(sentense);
-        p.css('background-color',colors[i]);
-        $('.off-edit').append(p);
-      }
+      // let content = $('#textarea1').text();
+      // let sentenses = content.split("\n\n");
+      // let colors = ['#b4dcea', '#c8e6c9', '#ffe4c2'];
+      // for (let i in sentenses) {
+      //   let sentense = sentenses[i];
+      //   let p = $('<p></p>').append(sentense);
+      //   p.css('background-color',colors[i]);
+      //   $('.off-edit').append(p);
+      // }
     } 
     $('.on-edit').toggle();
     $('.off-edit').toggle();
@@ -61,7 +61,7 @@ $(document).ready(function(){
   let descriptions = $('.description');
   for (var i = 0; i < descriptions.length; ++i) {
     let full_text = $(descriptions[i]).data('full');
-    let max_len = 32;
+    let max_len = 60;
     if (full_text.length > max_len) {
       $(descriptions[i]).text(full_text.slice(0, max_len) + '...');
       $(descriptions[i]).data('isfull', 'false');
