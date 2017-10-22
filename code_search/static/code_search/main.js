@@ -8,11 +8,10 @@ $(document).ready(function(){
   $('.submit').click(function () {
     if ($('.on-edit').is(":visible")) {
       $('.off-edit').empty();
-      // let label = $('<p></p>').text('Treatment');
-      let label = $('<label></label>').text('Describe treatments here').attr('for','textarea1');//.addClass('label-off');
-      label.css('margin-top','-25px');
-      label.css('font-size','0.8rem');
-      $('.off-edit').append(label);
+      // let label = $('<label></label>').text('Describe treatments here').attr('for','textarea1');
+      // label.css('margin-top','-25px');
+      // label.css('font-size','0.8rem');
+      // $('.off-edit').append(label);
       let content = $('#textarea1').text();
       let sentenses = content.split("\n\n");
       let colors = ['#b4dcea', '#fccae6', '#ffe4c2'];
